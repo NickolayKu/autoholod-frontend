@@ -1,0 +1,119 @@
+@import "tailwindcss";
+
+@font-face {
+  font-family: 'Montserrat';
+  src: local('Montserrat'),
+    url('../assets/fonts/Montserrat-Regular.ttf') format('truetype');
+  font-weight: 400;
+}
+
+@font-face {
+  font-family: 'Montserrat';
+  src: local('Montserrat'),
+    url('../assets/fonts/Montserrat-SemiBold.ttf') format('truetype');
+  font-weight: 600;
+}
+
+@font-face {
+  font-family: 'Montserrat';
+  src: local('Montserrat'),
+    url('../assets/fonts/Montserrat-Bold.ttf') format('truetype');
+  font-weight: 700;
+}
+
+@font-face {
+  font-family: 'DelaGothicOne';
+  src: local('DelaGothicOne'),
+    url('../assets/fonts/DelaGothicOne-Regular.ttf') format('truetype');
+  font-weight: 400;
+}
+
+::-webkit-scrollbar {
+  width: 5px;
+}
+
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #303030;
+  border-radius: 5px;
+}
+
+* {
+  scrollbar-width: thin;
+  scrollbar-color: #303030 transparent;
+}
+
+:root {
+  font-family: 'Montserrat';
+  font-weight: 400;
+  overflow-x: hidden;
+  background: rgb(42,38,39);
+}
+
+body {
+  margin: 0;
+  height: 100%;
+  min-height: 100vh;
+  scroll-behavior: smooth;
+  overflow-x: hidden;
+  -webkit-tap-highlight-color: transparent;
+  background: linear-gradient(to bottom right, rgba(0, 0, 255, 0.2), rgba(255, 0, 0, 0.2));
+}
+
+main {
+  flex: 1;
+  max-width: 1385px;
+  margin: 0 auto;
+}
+
+header, footer {
+  background: rgba(0,0,0,0.2)
+}
+
+.header {
+  z-index: 99;
+  position: fixed;
+  left: 0;
+  right: 0;
+  top: 0;
+  transition: all ease 0.3s;
+}
+
+.header-hidden {
+  top: -85px;
+}
+
+.header-on-top {
+  background: rgba(0,0,0,0.4);
+  backdrop-filter: blur(8px);
+}
+
+section {
+  margin-left: 25px;
+  margin-right: 25px;
+}
+
+.slick-slide {
+  border-radius: 20px;
+  overflow: hidden;
+}
+
+.slick-dots button:before {
+  color: white !important;
+}
+
+.block-dark-background {
+  background: rgba(200,200,200,0.05);
+}
+
+.card-background {
+  background-color: rgba(0,0,0, 0.2);
+  backdrop-filter: blur(10px);
+}
+
+.card-background:hover {
+  background-color: rgba(0,0,0, 0.3);
+}
