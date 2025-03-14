@@ -8,10 +8,7 @@ export default defineConfig({
   plugins: [
     react(),
     tailwindcss(),
-    svgr({
-      exportAsDefault: true,
-      typescript: true,
-    })
+    svgr(),
   ],
   resolve: {
     alias: {

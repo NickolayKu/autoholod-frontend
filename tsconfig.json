@@ -4,8 +4,13 @@
     { "path": "./tsconfig.app.json" },
     { "path": "./tsconfig.node.json" }
   ],
+  "include": [
+    "src",
+    "src/svgr.d.ts",
+  ],
   "compilerOptions": {
     "baseUrl": ".",
+    "esModuleInterop": true,
     "types": ["vite/client", "node"],
     "paths": {
       "@/*": ["./src/*"]
