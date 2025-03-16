@@ -9,7 +9,6 @@ import HomeIcon from "@/assets/icons/home.svg?react";
 import BadgeCheckIcon from "@/assets/icons/badge-check.svg?react";
 import LikeIcon from "@/assets/icons/like.svg?react";
 import WalletIcon from "@/assets/icons/wallet.svg?react";
-import Otzovi from "@/assets/otzovi.svg?react";
 
 export default function Home() {
 
