@@ -35,7 +35,7 @@ export default function Home() {
         <Slider {...settings}>
           {data.map((item, index) => {
             return (
-              <a key={index} href={item.link} className="shadow-sm">
+              <a key={index} href={item.link} className="shadow-sm rounded-lg overflow-hidden">
                 <img src={item.image} className="rounded-lg"/>
               </a>
             )
@@ -43,7 +43,9 @@ export default function Home() {
         </Slider>
       </div>
       <div className='w-full mt-20 text-center'>
-        <h2 className="text-zinc-50 text-2xl font-semibold">О компании</h2>
+        <h2 className="text-zinc-50 text-2xl font-semibold">
+          О компании
+        </h2>
         <div className="flex flex-row gap-10 mt-8 justify-between items-center block-dark-background rounded-lg p-4 shadow-sm">
           <div className="text-zinc-50 text-base text-left flex-1/2 leading-7">
             С 2000 года мы поставляем холодильно-отопительные установки, производим пуско-наладочные работы, 
@@ -162,7 +164,11 @@ export default function Home() {
       </div>
       <div className='w-full mt-20 text-center'>
         <h2 className="text-zinc-50 text-2xl font-semibold">Отзывы</h2>
-        <Otzovi className="w-full mt-8 mb-12"/>
+        <div className="w-full h-auto mb-8 mt-8 flex justify-center">
+          <iframe className="rounded-lg overflow-hidden yandex-comments-iframe" 
+            style={{maxWidth: '760px', width: '100%', height: '100vh'}} 
+            src="https://yandex.ru/maps-reviews-widget/226327670406?comments"></iframe>
+        </div>
       </div>
     </section>
   );
