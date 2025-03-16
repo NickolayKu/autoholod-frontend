@@ -1,7 +1,7 @@
 import { Link } from "react-router-dom";
-import Logo from "@/assets/logo.svg?react";
 import VKIcon from "@/assets/icons/vk.svg?react";
 import TGIcon from "@/assets/icons/tg.svg?react";
+import Logo from '@/assets/logo.svg?react';
 
 export default function Footer() {
   return (
@@ -18,7 +18,7 @@ export default function Footer() {
             Лицензии
           </Link>
           <Link to={'/'} className="text-zinc-50 hover:text-zinc-200 hover:underline underline-offset-5 transition-all">
-            Оплата и доставка
+            Оплата и доставка
           </Link>
           <Link to={'/'} className="text-zinc-50 hover:text-zinc-200 hover:underline underline-offset-5 transition-all">
             Политика обработки <br/>

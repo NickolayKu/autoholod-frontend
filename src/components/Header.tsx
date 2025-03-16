@@ -1,6 +1,6 @@
 import { Link, useLocation } from "react-router-dom";
 import { useEffect, useState } from "react";
-import Logo from "@/assets/logo.svg?react";
+import Logo from '@/assets/logo.svg?react';
 import PhoneIcon from "@/assets/icons/phone.svg?react";
 
 export default function Header() {
